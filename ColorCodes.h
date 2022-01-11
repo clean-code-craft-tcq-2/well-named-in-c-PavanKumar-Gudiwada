@@ -8,6 +8,8 @@ extern int numberOfMajorColors;
 
 extern int numberOfMinorColors;
 
+extern char str[50];
+
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 

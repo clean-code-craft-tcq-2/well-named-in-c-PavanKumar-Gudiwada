@@ -5,11 +5,18 @@
 #include "GetColorNumberPair.h" //GetColorFromPairNumber, GetColorFromPairNumber
 
 const int MAX_COLORPAIR_NAME_CHARS = 16;
+char colorPair_Formatted_String[15];
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
-        MinorColorNames[colorPair->minorColor]);
+        MinorColorNames[colorPair->minorColor]); 
+}
+
+void ColorPairToFormatedString(const ColorPair* colorPair, char* buffer) {
+	sprintf(colorPair_Formatted_String, "%-11s | %-14s",
+        MajorColorNames[colorPair->majorColor],
+        MinorColorNames[colorPair->minorColor]);   
 }
 
 void testNumberToPair(int pairNumber,
