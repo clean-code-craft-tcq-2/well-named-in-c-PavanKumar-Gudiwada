@@ -13,12 +13,6 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer) {
         MinorColorNames[colorPair->minorColor]); 
 }
 
-void ColorPairToFormatedString(const ColorPair* colorPair, char* buffer) {
-	sprintf(colorPair_Formatted_String, "%-11s | %-14s",
-        MajorColorNames[colorPair->majorColor],
-        MinorColorNames[colorPair->minorColor]);   
-}
-
 void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
     enum MinorColor expectedMinor)

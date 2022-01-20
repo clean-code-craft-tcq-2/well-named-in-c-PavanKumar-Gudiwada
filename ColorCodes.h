@@ -1,6 +1,8 @@
 #ifndef COLORCODES_H
 #define COLORCODES_H
 
+extern void printColorCodeManual();
+
 extern const char* MajorColorNames[];
     
 extern const char* MinorColorNames[];
